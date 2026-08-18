@@ -227,6 +227,26 @@ URSAI is built for maximum performance, utilizing a modern, strictly-typed web s
 
 ---
 
+## 🔮 FUTURE ROADMAP: THE 2030 VISION
+
+URSAI is built to scale. While the current build successfully coordinates terrestrial vehicles, the architecture is designed for full metropolitan integration:
+- **[Q1 2027] Airborne Swarm Integration**: Integrating autonomous drone swarms for aerial perimeter surveillance and critical medical supply drops.
+- **[Q3 2027] Predictive Weather Analytics**: Interfacing with meteorological APIs to pre-position resources before severe weather events trigger structural emergencies.
+- **[2028] Full V2I Integration**: Extending communication beyond traffic lights to include bridge control, metro rail shutdowns, and automated street barrier deployments.
+- **[2030] Zero-Latency Smart City Grid**: 100% autonomous emergency response capabilities operating across every sector of Chennai.
+
+---
+
+## 🎮 COMMAND CENTER OPERATIONS GUIDE
+
+While URSAI operates autonomously, human commanders retain full oversight capabilities:
+1. **Presentation Mode**: Use the toggle in the top navigation bar to enter full-screen immersive command center mode.
+2. **View Toggles**: Instantly switch between `2D Streets`, `3D Tilt`, and `Satellite` telemetry to gain the optimal perspective for the ongoing incident.
+3. **3D View Adjuster**: Use the on-screen D-Pad or your mouse (Left-Click to Orbit, Scroll to Zoom, Right-Click to Pan) to inspect ground-level agent movements.
+4. **Agent Telemetry**: Monitor the `MISSION & AGENT ACTIVITY` sidebar to view real-time log outputs, ensuring that the AI Swarm is negotiating priorities efficiently.
+
+---
+
 ## 🚀 CONFIGURATION & SETUP
 
 ### Prerequisites
