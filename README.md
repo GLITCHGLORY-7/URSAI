@@ -122,32 +122,6 @@ A severe, multi-vehicle collision occurs at a major intersection (e.g., Anna Sal
 
 ---
 
-## 📸 COMPLETE VISUAL PRODUCT WALKTHROUGH
-
-### 1. Interface View 1
-<img src="./public/docs/img1.png" alt="Interface View 1" width="800" />
-
-### 2. Interface View 2
-<img src="./public/docs/img2.png" alt="Interface View 2" width="800" />
-
-### 3. Interface View 3
-<img src="./public/docs/img3.png" alt="Interface View 3" width="800" />
-
-### 4. Interface View 4
-<img src="./public/docs/img4.png" alt="Interface View 4" width="800" />
-
-### 5. Interface View 5
-<img src="./public/docs/img5.png" alt="Interface View 5" width="800" />
-
-### 6. Interface View 6
-<img src="./public/docs/img6.png" alt="Interface View 6" width="800" />
-
-### 7. Interface View 7
-<img src="./public/docs/img7.png" alt="Interface View 7" width="800" />
-
-### 8. Interface View 8
-<img src="./public/docs/img8.png" alt="Interface View 8" width="800" />
-
 ---
 
 ## 🏗️ SYSTEM ARCHITECTURE FLOW
