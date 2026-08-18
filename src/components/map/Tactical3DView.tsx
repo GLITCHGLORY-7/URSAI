@@ -576,9 +576,9 @@ export const Tactical3DView: React.FC<Tactical3DViewProps> = ({ onSwitchTo2D }) 
       scene.add(gTree);
     }
 
-    // 12. 3D HOSPITAL COMPLEXES (Apollo Hospitals Greams Rd & Rajiv Gandhi General Hospital)
+    // 12. 3D HOSPITAL COMPLEXES
     const hospitalsList = hospital?.allHospitals?.length ? hospital.allHospitals : INITIAL_HOSPITALS;
-    hospitalsList.slice(0, 3).forEach((h, idx) => {
+    hospitalsList.forEach((h, idx) => {
       const [hx, hz] = gpsTo3D(h.latitude, h.longitude);
       const hosp = buildRealisticHospitalComplex(h.name, idx === 0);
       hosp.position.set(hx, 0, hz);
