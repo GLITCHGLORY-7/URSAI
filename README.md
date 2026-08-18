@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/ursai-logo.jpg" alt="URSAI Logo" width="400" />
+  <img src="./public/ursai-logo.jpg" alt="URSAI Logo" width="400" />
   
   *The URSAI identity: A modern, enterprise-ready symbol representing autonomous urban resource swarm intelligence.*
 
@@ -125,32 +125,32 @@ A severe, multi-vehicle collision occurs at a major intersection (e.g., Anna Sal
 ## 📸 COMPLETE VISUAL PRODUCT WALKTHROUGH
 
 ### 1. The 2D Tactical Command View
-<img src="public/docs/2d_map.jpg" alt="2D Tactical Map" width="800" />
+<img src="./public/docs/2d_map.jpg" alt="2D Tactical Map" width="800" />
 
 *The primary URSAI command interface. It displays the live Chennai sector map, active incident markers, and hospital bed availability telemetry. Dispatchers can oversee the entire grid while the swarm manages logistics.*
 
 ### 2. Satellite Telemetry Mode
-<img src="public/docs/satellite_map.png" alt="Satellite Map Mode" width="800" />
+<img src="./public/docs/satellite_map.png" alt="Satellite Map Mode" width="800" />
 
 *A high-resolution satellite imagery overlay for precision geographic coordination, environmental assessment, and structural context around the incident site.*
 
 ### 3. 3D Digital Twin Cityscape
-<img src="public/docs/3d_map.png" alt="3D Digital Twin" width="800" />
+<img src="./public/docs/3d_map.png" alt="3D Digital Twin" width="800" />
 
 *An immersive 60FPS WebGL 3D simulation of the city. This view visualizes the V2X Green Wave corridors, metro infrastructure, and real-time agent movement through the cyberpunk-styled streets.*
 
 ### 4. Live Mission Activity Stream
-<img src="public/docs/activity_stream.jpg" alt="Activity Stream" width="400" />
+<img src="./public/docs/activity_stream.jpg" alt="Activity Stream" width="400" />
 
 *The operational sidebar detailing the active incident severity, destination hospital, and a live summary of all active agents working simultaneously to resolve the crisis.*
 
 ### 5. Autonomous Agent Roles
-<img src="public/docs/agent_roles.png" alt="Agent Roles" width="400" />
+<img src="./public/docs/agent_roles.png" alt="Agent Roles" width="400" />
 
 *Granular telemetry cards for individual swarm agents (Ambulance AM-15, Police PD-28, Traffic TR-07, and Hospital ER), showcasing their current strategies, ETA, and specialized tasks.*
 
 ### 6. Inter-Agent AI Comms Log
-<img src="public/docs/ai_comms.png" alt="AI Comms Log" width="400" />
+<img src="./public/docs/ai_comms.png" alt="AI Comms Log" width="400" />
 
 *The raw V2X communication stream. This log provides full transparency into the LLM orchestrator and how the autonomous agents negotiate priorities and share data without human intervention.*
 
