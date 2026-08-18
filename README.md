@@ -124,35 +124,29 @@ A severe, multi-vehicle collision occurs at a major intersection (e.g., Anna Sal
 
 ## 📸 COMPLETE VISUAL PRODUCT WALKTHROUGH
 
-### 1. The 2D Tactical Command View
-<img src="./public/docs/2d_map.jpg" alt="2D Tactical Map" width="800" />
+### 1. Interface View 1
+<img src="./public/docs/img1.png" alt="Interface View 1" width="800" />
 
-*The primary URSAI command interface. It displays the live Chennai sector map, active incident markers, and hospital bed availability telemetry. Dispatchers can oversee the entire grid while the swarm manages logistics.*
+### 2. Interface View 2
+<img src="./public/docs/img2.png" alt="Interface View 2" width="800" />
 
-### 2. Satellite Telemetry Mode
-<img src="./public/docs/satellite_map.png" alt="Satellite Map Mode" width="800" />
+### 3. Interface View 3
+<img src="./public/docs/img3.png" alt="Interface View 3" width="800" />
 
-*A high-resolution satellite imagery overlay for precision geographic coordination, environmental assessment, and structural context around the incident site.*
+### 4. Interface View 4
+<img src="./public/docs/img4.png" alt="Interface View 4" width="800" />
 
-### 3. 3D Digital Twin Cityscape
-<img src="./public/docs/3d_map.png" alt="3D Digital Twin" width="800" />
+### 5. Interface View 5
+<img src="./public/docs/img5.png" alt="Interface View 5" width="800" />
 
-*An immersive 60FPS WebGL 3D simulation of the city. This view visualizes the V2X Green Wave corridors, metro infrastructure, and real-time agent movement through the cyberpunk-styled streets.*
+### 6. Interface View 6
+<img src="./public/docs/img6.png" alt="Interface View 6" width="800" />
 
-### 4. Live Mission Activity Stream
-<img src="./public/docs/activity_stream.jpg" alt="Activity Stream" width="400" />
+### 7. Interface View 7
+<img src="./public/docs/img7.png" alt="Interface View 7" width="800" />
 
-*The operational sidebar detailing the active incident severity, destination hospital, and a live summary of all active agents working simultaneously to resolve the crisis.*
-
-### 5. Autonomous Agent Roles
-<img src="./public/docs/agent_roles.png" alt="Agent Roles" width="400" />
-
-*Granular telemetry cards for individual swarm agents (Ambulance AM-15, Police PD-28, Traffic TR-07, and Hospital ER), showcasing their current strategies, ETA, and specialized tasks.*
-
-### 6. Inter-Agent AI Comms Log
-<img src="./public/docs/ai_comms.png" alt="AI Comms Log" width="400" />
-
-*The raw V2X communication stream. This log provides full transparency into the LLM orchestrator and how the autonomous agents negotiate priorities and share data without human intervention.*
+### 8. Interface View 8
+<img src="./public/docs/img8.png" alt="Interface View 8" width="800" />
 
 ---
 
