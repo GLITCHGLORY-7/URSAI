@@ -130,7 +130,7 @@ A severe, multi-vehicle collision occurs at a major intersection (e.g., Anna Sal
 *The overarching 2D command view providing a macro-level perspective of the city grid. Autonomous agents—such as Police and Traffic units—are tracked in real-time as they maneuver to secure the incident zone and establish V2X green corridors.*
 
 ### 2. 3D Digital Twin Cityscape
-<img src="./public/docs/3d_twin.jpg" alt="3D Digital Twin" width="800" />
+<img src="./public/docs/3d_twin.png" alt="3D Digital Twin" width="800" />
 
 *A highly optimized, 60FPS WebGL immersive view. This detailed 3D environment allows dispatchers to monitor the swarm's activity at ground level, visualizing building coordinates and the cyber-physical mesh network.*
 
