@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background & Ring Gradients -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="35%" stop-color="#0066ff"/>
+      <stop offset="70%" stop-color="#002b66"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+
+    <linearGradient id="wingGradLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a8ff"/>
+      <stop offset="40%" stop-color="#0052cc"/>
+      <stop offset="100%" stop-color="#021a44"/>
+    </linearGradient>
+
+    <linearGradient id="wingGradRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="50%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#005b8e"/>
+    </linearGradient>
+
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#00a8ff"/>
+    </linearGradient>
+
+    <linearGradient id="buildingGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0a192f"/>
+    </linearGradient>
+
+    <linearGradient id="buildingGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0077b6"/>
+      <stop offset="100%" stop-color="#030c1b"/>
+    </linearGradient>
+
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#021024"/>
+      <stop offset="100%" stop-color="#0b1b36"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051530"/>
+      <stop offset="100%" stop-color="#020b18"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== EMBLEM ==================== -->
+  <g id="ursai-emblem" transform="translate(400, 270)">
+    <!-- Outer Circular Ring Outer Stroke -->
+    <circle cx="0" cy="0" r="190" fill="none" stroke="url(#ringGrad)" stroke-width="14" />
+    <circle cx="0" cy="0" r="180" fill="#030c1c" stroke="#00d4ff" stroke-width="1.5" stroke-opacity="0.4" />
+
+    <!-- Antenna Signal Waves -->
+    <path d="M -36 -128 A 45 45 0 0 1 36 -128" fill="none" stroke="#00f5ff" stroke-width="6" stroke-linecap="round" />
+    <path d="M -24 -116 A 30 30 0 0 1 24 -116" fill="none" stroke="#00f5ff" stroke-width="5" stroke-linecap="round" />
+    <circle cx="0" cy="-105" r="4.5" fill="#00f5ff" />
+    <line x1="0" y1="-105" x2="0" y2="-90" stroke="#00f5ff" stroke-width="4" />
+
+    <!-- City Skyline Buildings -->
+    <!-- Left Building -->
+    <path d="M -75 20 L -75 -75 L -56 -92 L -40 -92 L -40 20 Z" fill="url(#buildingGrad2)" />
+    <!-- Left Building Windows -->
+    <g fill="#00f5ff" opacity="0.85">
+      <rect x="-70" y="-70" width="4" height="6" rx="1"/>
+      <rect x="-62" y="-70" width="4" height="6" rx="1"/>
+      <rect x="-50" y="-70" width="4" height="6" rx="1"/>
+      <rect x="-70" y="-58" width="4" height="6" rx="1"/>
+      <rect x="-62" y="-58" width="4" height="6" rx="1"/>
+      <rect x="-50" y="-58" width="4" height="6" rx="1"/>
+      <rect x="-70" y="-46" width="4" height="6" rx="1"/>
+      <rect x="-62" y="-46" width="4" height="6" rx="1"/>
+      <rect x="-50" y="-46" width="4" height="6" rx="1"/>
+      <rect x="-70" y="-34" width="4" height="6" rx="1"/>
+      <rect x="-62" y="-34" width="4" height="6" rx="1"/>
+      <rect x="-50" y="-34" width="4" height="6" rx="1"/>
+    </g>
+
+    <!-- Center Main Tower -->
+    <path d="M -22 20 L -22 -88 L 0 -102 L 22 -88 L 22 20 Z" fill="url(#buildingGrad1)" />
+    <line x1="0" y1="-102" x2="0" y2="20" stroke="#00f5ff" stroke-width="3" opacity="0.9" />
+    <!-- Center Windows -->
+    <g fill="#ffffff" opacity="0.9">
+      <rect x="-16" y="-76" width="5" height="12" rx="1"/>
+      <rect x="11" y="-76" width="5" height="12" rx="1"/>
+      <rect x="-16" y="-56" width="5" height="12" rx="1"/>
+      <rect x="11" y="-56" width="5" height="12" rx="1"/>
+      <rect x="-16" y="-36" width="5" height="12" rx="1"/>
+      <rect x="11" y="-36" width="5" height="12" rx="1"/>
+    </g>
+
+    <!-- Right Building -->
+    <path d="M 40 20 L 40 -80 L 58 -92 L 76 -78 L 76 20 Z" fill="url(#buildingGrad2)" />
+    <!-- Right Building Windows -->
+    <g fill="#00f5ff" opacity="0.85">
+      <rect x="46" y="-68" width="18" height="3.5" rx="1"/>
+      <rect x="46" y="-58" width="18" height="3.5" rx="1"/>
+      <rect x="46" y="-48" width="18" height="3.5" rx="1"/>
+      <rect x="46" y="-38" width="18" height="3.5" rx="1"/>
+      <rect x="46" y="-28" width="18" height="3.5" rx="1"/>
+    </g>
+
+    <!-- Neural Swarm AI Constellation Mesh -->
+    <g stroke="#00f5ff" stroke-width="2.2" opacity="0.95">
+      <line x1="0" y1="-28" x2="-38" y2="-12"/>
+      <line x1="0" y1="-28" x2="38" y2="-12"/>
+      <line x1="-38" y1="-12" x2="-54" y2="24"/>
+      <line x1="-38" y1="-12" x2="0" y2="12"/>
+      <line x1="38" y1="-12" x2="54" y2="24"/>
+      <line x1="38" y1="-12" x2="0" y2="12"/>
+      <line x1="-54" y1="24" x2="-24" y2="44"/>
+      <line x1="54" y1="24" x2="24" y2="44"/>
+      <line x1="0" y1="12" x2="-24" y2="44"/>
+      <line x1="0" y1="12" x2="24" y2="44"/>
+      <line x1="-24" y1="44" x2="24" y2="44"/>
+    </g>
+    <!-- Constellation Nodes -->
+    <g fill="#ffffff" stroke="#00d4ff" stroke-width="2">
+      <circle cx="0" cy="-28" r="7" fill="#00f5ff"/>
+      <circle cx="-38" cy="-12" r="5"/>
+      <circle cx="38" cy="-12" r="5"/>
+      <circle cx="-54" cy="24" r="5.5"/>
+      <circle cx="54" cy="24" r="5.5"/>
+      <circle cx="0" cy="12" r="8" fill="#ffffff" filter="url(#cyanGlow)"/>
+      <circle cx="-24" cy="44" r="5"/>
+      <circle cx="24" cy="44" r="5"/>
+    </g>
+
+    <!-- U-Wing Outer Shield Shell -->
+    <!-- Left Wing -->
+    <path d="M -122 -95 C -120 -20 -115 65 -60 120 C -25 155 0 162 0 162 C -40 148 -75 118 -98 75 C -116 40 -115 -45 -122 -95 Z" fill="url(#wingGradLeft)" />
+    <path d="M -122 -95 L -85 -55 C -85 20 -70 70 -30 105 C -55 85 -75 45 -80 -10 L -80 -70 Z" fill="#0066ff" opacity="0.6"/>
+
+    <!-- Right Wing -->
+    <path d="M 122 -95 C 120 -20 115 65 60 120 C 25 155 0 162 0 162 C 40 148 75 118 98 75 C 116 40 115 -45 122 -95 Z" fill="url(#wingGradRight)" />
+    <path d="M 122 -95 L 85 -55 C 85 20 70 70 30 105 C 55 85 75 45 80 -10 L 80 -70 Z" fill="#00d4ff" opacity="0.7"/>
+
+    <!-- Curved Smart City Highway Roadway -->
+    <path d="M -18 35 C -5 65 -25 105 -115 170 C -35 185 45 178 115 125 C 60 120 25 90 12 35 Z" fill="url(#roadGrad)" stroke="#00d4ff" stroke-width="2.5" />
+    <!-- White Dashed Road Markings -->
+    <path d="M -4 42 C -2 68 -20 108 -80 168" fill="none" stroke="#ffffff" stroke-width="6" stroke-dasharray="14, 10" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== URSAI TYPOGRAPHY ==================== -->
+  <g id="ursai-text" transform="translate(400, 600)">
+    <!-- Letter U -->
+    <g transform="translate(-320, -50)">
+      <!-- Top Cyan Accent Cut -->
+      <polygon points="0,0 35,0 0,35" fill="url(#cyanAccent)" />
+      <!-- U Main Body -->
+      <path d="M 0,35 L 35,0 L 42,0 L 42,65 C 42,88 58,102 82,102 C 106,102 122,88 122,65 L 122,0 L 158,0 L 158,68 C 158,110 126,140 82,140 C 38,140 0,110 0,68 Z" fill="#021430" stroke="#004488" stroke-width="1.5"/>
+      <path d="M 0,35 L 35,0 L 42,0 L 42,65 C 42,88 58,102 82,102 C 106,102 122,88 122,65 L 122,0 L 158,0 L 158,68 C 158,110 126,140 82,140 C 38,140 0,110 0,68 Z" fill="url(#textGrad)"/>
+    </g>
+
+    <!-- Letter R -->
+    <g transform="translate(-140, -50)">
+      <path d="M 0,0 L 105,0 C 132,0 152,18 152,44 C 152,65 138,80 118,85 L 156,140 L 112,140 L 78,90 L 38,90 L 38,140 L 0,140 Z M 38,32 L 38,60 L 98,60 C 110,60 118,52 118,46 C 118,38 110,32 98,32 Z" fill="url(#textGrad)" stroke="#004488" stroke-width="1.5"/>
+    </g>
+
+    <!-- Letter S -->
+    <g transform="translate(35, -50)">
+      <path d="M 135,28 L 102,46 C 96,38 88,32 74,32 C 60,32 50,38 50,48 C 50,58 58,64 78,70 L 95,75 C 130,86 148,102 148,124 C 148,154 118,172 75,172 C 32,172 6,150 0,128 L 36,110 C 42,122 55,134 75,134 C 92,134 105,124 105,112 C 105,100 96,94 74,88 L 56,82 C 22,72 6,56 6,32 C 6,10 32,-8 72,-8 C 105,-8 126,6 135,28 Z" transform="translate(0, 8)" fill="url(#textGrad)" stroke="#004488" stroke-width="1.5"/>
+    </g>
+
+    <!-- Letter A -->
+    <g transform="translate(205, -50)">
+      <polygon points="68,0 136,140 96,140 82,108 54,108 40,140 0,140" fill="url(#textGrad)" stroke="#004488" stroke-width="1.5"/>
+      <!-- Cyan Inner Triangle Delta -->
+      <polygon points="68,48 88,92 48,92" fill="url(#cyanAccent)" filter="url(#cyanGlow)"/>
+    </g>
+
+    <!-- Letter I -->
+    <g transform="translate(365, -50)">
+      <!-- Top Cyan Accent Cut -->
+      <polygon points="0,0 35,0 35,35" fill="url(#cyanAccent)" />
+      <!-- I Bar -->
+      <path d="M 0,0 L 0,140 L 35,140 L 35,35 Z" fill="url(#textGrad)" stroke="#004488" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- ==================== SUBTITLE & ACCENT LINE ==================== -->
+  <g id="ursai-subtitle" transform="translate(400, 715)">
+    <!-- Subtitle Text -->
+    <text x="0" y="0" text-anchor="middle" font-family="'Inter', 'Montserrat', 'Segoe UI', sans-serif" font-size="21" font-weight="900" letter-spacing="4" fill="#051c3f">
+      URBAN <tspan fill="#00d4ff">•</tspan> RESOURCE <tspan fill="#00d4ff">•</tspan> SWARM <tspan fill="#00d4ff">•</tspan> AI <tspan fill="#00d4ff">•</tspan> INTELLIGENCE
+    </text>
+
+    <!-- Tapered Centerline Accent -->
+    <g transform="translate(0, 36)">
+      <line x1="-240" y1="0" x2="-20" y2="0" stroke="#005599" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="20" y1="0" x2="240" y2="0" stroke="#005599" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Glowing Diamond / Node Center -->
+      <polygon points="0,-6 10,0 0,6 -10,0" fill="#00f5ff" filter="url(#cyanGlow)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+    </g>
+  </g>
+</svg>

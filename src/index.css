@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-slate-950: #030b17; /* Deep cyber blue from logo */
+  --color-slate-900: #081224;
+  --color-slate-800: #0e1e3b;
+  --color-slate-700: #172a50;
+  --color-cyan-400: #00f5ff; /* Logo bright cyan */
+  --color-cyan-500: #00e5ff;
+  --color-cyan-950: #022036;
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(8, 18, 36, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 245, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+}
+
+/* Leaflet dark theme overrides and dimensions guarantee */
+.leaflet-container {
+  background-color: #020617 !important;
+  font-family: inherit;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 400px !important;
+  position: relative !important;
+  z-index: 0 !important;
+}
+
+.dark-popup .leaflet-popup-content-wrapper {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+.dark-popup .leaflet-popup-tip {
+  background-color: #0f172a !important;
+}
+
+.custom-tooltip {
+  background-color: #090d16 !important;
+  border: 1px solid #334155 !important;
+  color: #f8fafc !important;
+  border-radius: 6px !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5) !important;
+  padding: 4px 8px !important;
+}
+
+.custom-tooltip::before {
+  border-top-color: #090d16 !important;
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* ---------------------------------------------------------
+   Map Route Animations & Glowing Effects
+--------------------------------------------------------- */
+.route-glow-ambulance {
+  filter: drop-shadow(0 0 6px rgba(0, 245, 255, 0.8));
+  animation: dash-flow 25s linear infinite;
+}
+
+.route-glow-police {
+  filter: drop-shadow(0 0 6px rgba(139, 92, 246, 0.8));
+  animation: dash-flow 25s linear infinite;
+}
+
+.route-glow-traffic {
+  filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.8));
+  animation: dash-flow-reverse 30s linear infinite;
+}
+
+.route-glow-green-corridor {
+  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 1));
+  animation: pulse-wave 1.5s ease-in-out infinite alternate, dash-flow 15s linear infinite;
+  stroke-dasharray: 12, 12 !important; /* Force dashes for the flowing effect even on corridor */
+}
+
+@keyframes dash-flow {
+  to { stroke-dashoffset: -1000; }
+}
+
+@keyframes dash-flow-reverse {
+  to { stroke-dashoffset: 1000; }
+}
+
+@keyframes pulse-wave {
+  from { filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.5)); opacity: 0.75; }
+  to { filter: drop-shadow(0 0 14px rgba(16, 185, 129, 1)); opacity: 1; }
+}
