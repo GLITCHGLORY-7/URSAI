@@ -124,35 +124,45 @@ A severe, multi-vehicle collision occurs at a major intersection (e.g., Anna Sal
 
 ## 📸 COMPLETE VISUAL PRODUCT WALKTHROUGH
 
-### 1. The 2D Tactical Command View
-<img src="./public/docs/2d_map.jpg" alt="2D Tactical Map" width="800" />
+### 1. 2D Tactical Command Interface
+<img src="./public/docs/2d_map.png" alt="2D Tactical Map" width="800" />
 
-*The primary URSAI command interface. It displays the live Chennai sector map, active incident markers, and hospital bed availability telemetry. Dispatchers can oversee the entire grid while the swarm manages logistics.*
+*The overarching 2D command view providing a macro-level perspective of the city grid. Autonomous agents—such as Police and Traffic units—are tracked in real-time as they maneuver to secure the incident zone and establish V2X green corridors.*
 
-### 2. Satellite Telemetry Mode
-<img src="./public/docs/satellite_map.png" alt="Satellite Map Mode" width="800" />
+### 2. 3D Digital Twin Cityscape
+<img src="./public/docs/3d_twin.jpg" alt="3D Digital Twin" width="800" />
 
-*A high-resolution satellite imagery overlay for precision geographic coordination, environmental assessment, and structural context around the incident site.*
+*A highly optimized, 60FPS WebGL immersive view. This detailed 3D environment allows dispatchers to monitor the swarm's activity at ground level, visualizing building coordinates and the cyber-physical mesh network.*
 
-### 3. 3D Digital Twin Cityscape
-<img src="./public/docs/3d_map.png" alt="3D Digital Twin" width="800" />
+### 3. Satellite Telemetry Mode
+<img src="./public/docs/satellite_map.jpg" alt="Satellite Map Mode" width="800" />
 
-*An immersive 60FPS WebGL 3D simulation of the city. This view visualizes the V2X Green Wave corridors, metro infrastructure, and real-time agent movement through the cyberpunk-styled streets.*
+*High-resolution satellite overlay enabling precision geographic coordination. The active tracking paths of the AM-15 Ambulance and PD-28 Interceptor are traced across the actual topography of the Chennai sector.*
 
-### 4. Live Mission Activity Stream
-<img src="./public/docs/activity_stream.jpg" alt="Activity Stream" width="400" />
+### 4. Live Mission Activity & Agent Handover
+<img src="./public/docs/agent_activity_1.png" alt="Mission Activity - Handover" width="400" />
 
-*The operational sidebar detailing the active incident severity, destination hospital, and a live summary of all active agents working simultaneously to resolve the crisis.*
+*Real-time telemetry sidebar tracking the autonomous actions of the swarm. As Ambulance AM-15 arrives at the hospital, the Hospital Agent updates ICU capacity and the Traffic Agent releases the green corridor locks automatically.*
 
-### 5. Autonomous Agent Roles
-<img src="./public/docs/agent_roles.png" alt="Agent Roles" width="400" />
+### 5. Automated Incident Classification
+<img src="./public/docs/agent_activity_2.png" alt="Incident Classification" width="400" />
 
-*Granular telemetry cards for individual swarm agents (Ambulance AM-15, Police PD-28, Traffic TR-07, and Hospital ER), showcasing their current strategies, ETA, and specialized tasks.*
+*The NVIDIA NIM LLM orchestrator instantly parsing the incoming raw data (a severe rollover crash at Kathipara Cloverleaf Junction), classifying it as CRITICAL, and assigning the optimal destination hospital without human intervention.*
 
-### 6. Inter-Agent AI Comms Log
+### 6. Ambulance & Police Agent Roles
+<img src="./public/docs/agent_roles_1.png" alt="Ambulance & Police Agents" width="400" />
+
+*Granular telemetry detailing the Ambulance Agent's ongoing task (handing over the patient to Trauma Bay 2) and the Police Agent's rapid response to secure a 150m crash perimeter and manage civilian diversion.*
+
+### 7. Traffic & Hospital Agent Roles
+<img src="./public/docs/agent_roles_2.png" alt="Traffic & Hospital Agents" width="400" />
+
+*Telemetry cards for the Traffic Agent (overriding 4 junctions to save 4.8 minutes via dynamic V2X signal extension) and the Hospital ER Agent (pre-allocating trauma bays to eliminate wait times).*
+
+### 8. Autonomous V2X Inter-Agent Comms
 <img src="./public/docs/ai_comms.png" alt="AI Comms Log" width="400" />
 
-*The raw V2X communication stream. This log provides full transparency into the LLM orchestrator and how the autonomous agents negotiate priorities and share data without human intervention.*
+*The transparent AI communication stream. The Swarm Orchestrator dispatches units, while autonomous agents negotiate strategies and confirm completion—entirely without human input.*
 
 ---
 
