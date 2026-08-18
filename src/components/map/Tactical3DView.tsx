@@ -266,9 +266,9 @@ export const Tactical3DView: React.FC<Tactical3DViewProps> = ({ onSwitchTo2D }) 
     // GROUND TERRAIN
     const groundGeo = new THREE.PlaneGeometry(1600, 1600);
     const groundMat = new THREE.MeshStandardMaterial({
-      color: 0x060c18,
-      roughness: 0.92,
-      metalness: 0.1,
+      color: 0x0a1c12, // Subtle dark olive/green to look more like terrain
+      roughness: 0.95,
+      metalness: 0.05,
     });
     const ground = new THREE.Mesh(groundGeo, groundMat);
     ground.rotation.x = -Math.PI / 2;
@@ -510,19 +510,19 @@ export const Tactical3DView: React.FC<Tactical3DViewProps> = ({ onSwitchTo2D }) 
 
     // 9. HIGH-RISE COMMERCIAL GLASS SKYLINE CLUSTERS
     const corporateTowerCoords = [
-      { lat: 13.0670, lng: 80.2580, height: 62, width: 28, depth: 22, color: 0x0284c7 },
-      { lat: 13.0645, lng: 80.2470, height: 52, width: 24, depth: 24, color: 0x06b6d4 },
-      { lat: 13.0540, lng: 80.2550, height: 48, width: 22, depth: 20, color: 0x3b82f6 }, // Moved away from road
-      { lat: 13.0720, lng: 80.2610, height: 58, width: 26, depth: 26, color: 0x0ea5e9 },
-      { lat: 13.0450, lng: 80.2620, height: 44, width: 24, depth: 18, color: 0x6366f1 },
-      { lat: 13.0760, lng: 80.2520, height: 50, width: 22, depth: 22, color: 0x0284c7 },
+      { lat: 13.0670, lng: 80.2580, height: 62, width: 28, depth: 22, color: 0xec4899 }, // Neon Pink
+      { lat: 13.0645, lng: 80.2470, height: 52, width: 24, depth: 24, color: 0x10b981 }, // Emerald Green
+      { lat: 13.0540, lng: 80.2550, height: 48, width: 22, depth: 20, color: 0xf59e0b }, // Neon Amber (Moved away from road)
+      { lat: 13.0720, lng: 80.2610, height: 58, width: 26, depth: 26, color: 0x8b5cf6 }, // Violet
+      { lat: 13.0450, lng: 80.2620, height: 44, width: 24, depth: 18, color: 0xef4444 }, // Bright Red
+      { lat: 13.0760, lng: 80.2520, height: 50, width: 22, depth: 22, color: 0x06b6d4 }, // Cyan
       // New additions for density
-      { lat: 13.0600, lng: 80.2600, height: 65, width: 30, depth: 30, color: 0x0ea5e9 },
-      { lat: 13.0620, lng: 80.2520, height: 55, width: 25, depth: 25, color: 0x0284c7 },
-      { lat: 13.0680, lng: 80.2500, height: 70, width: 32, depth: 28, color: 0x3b82f6 },
-      { lat: 13.0480, lng: 80.2580, height: 45, width: 24, depth: 24, color: 0x06b6d4 }, // Moved away from road
-      { lat: 13.0750, lng: 80.2480, height: 48, width: 22, depth: 26, color: 0x6366f1 },
-      { lat: 13.0710, lng: 80.2650, height: 60, width: 28, depth: 28, color: 0x0ea5e9 },
+      { lat: 13.0600, lng: 80.2600, height: 65, width: 30, depth: 30, color: 0x14b8a6 }, // Teal
+      { lat: 13.0620, lng: 80.2520, height: 55, width: 25, depth: 25, color: 0xd946ef }, // Fuchsia
+      { lat: 13.0680, lng: 80.2500, height: 70, width: 32, depth: 28, color: 0x3b82f6 }, // Classic Blue
+      { lat: 13.0480, lng: 80.2580, height: 45, width: 24, depth: 24, color: 0xf97316 }, // Orange (Moved away from road)
+      { lat: 13.0750, lng: 80.2480, height: 48, width: 22, depth: 26, color: 0x84cc16 }, // Lime
+      { lat: 13.0710, lng: 80.2650, height: 60, width: 28, depth: 28, color: 0x6366f1 }, // Indigo
     ];
 
     corporateTowerCoords.forEach((t) => {

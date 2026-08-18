@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
           }`}
         >
           <Monitor className="w-3.5 h-3.5" />
-          <span>{isPresMode ? 'PRESENTATION MODE ON' : 'PRESENTATION MODE'}</span>
+          <span className="hidden sm:inline">{isPresMode ? 'PRESENTATION MODE ON' : 'PRESENTATION MODE'}</span>
         </button>
 
         <div className="hidden xl:flex items-center gap-2 px-2.5 py-1.5 rounded bg-slate-900 border border-slate-800 text-slate-300">

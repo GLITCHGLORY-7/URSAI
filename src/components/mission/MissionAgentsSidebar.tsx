@@ -254,8 +254,8 @@ export const MissionAgentsSidebar: React.FC = () => {
   const phase = getMissionPhase();
 
   return (
-    <aside className="w-full lg:w-[420px] xl:w-[450px] bg-slate-950/95 backdrop-blur-xl border-l border-slate-800 flex flex-col h-full overflow-hidden shrink-0 shadow-2xl">
-      {/* 1. Header with Tab Switcher */}
+    <aside className="w-full lg:w-[380px] xl:w-[420px] bg-slate-900 border-t lg:border-t-0 lg:border-l border-slate-800 flex flex-col min-h-[50vh] lg:min-h-0 lg:h-full overflow-hidden shrink-0 z-10 lg:shadow-[-8px_0_24px_rgba(0,0,0,0.6)]">
+      {/* 1. Header / Global Status */}
       <div className="p-3.5 border-b border-slate-800 bg-slate-900/60">
         <div className="flex items-center justify-between mb-2.5">
           <div className="flex items-center gap-2">

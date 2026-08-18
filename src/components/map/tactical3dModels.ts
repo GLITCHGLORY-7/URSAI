@@ -1561,8 +1561,8 @@ export function buildGlassCorporateTower(height = 54, width = 24, depth = 20, co
 export function buildUrbanResidentialBlock(height = 36, width = 28, depth = 18): THREE.Group {
   const group = new THREE.Group();
 
-  const stuccoMat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, roughness: 0.5 });
-  const woodPanelMat = new THREE.MeshStandardMaterial({ color: 0xb45309, roughness: 0.6 });
+  const stuccoMat = new THREE.MeshStandardMaterial({ color: 0xd1d5db, roughness: 0.7 }); // Lighter concrete
+  const woodPanelMat = new THREE.MeshStandardMaterial({ color: 0xeab308, roughness: 0.6 }); // Bright yellow/gold accent
   const glassBalconyMat = new THREE.MeshPhysicalMaterial({
     color: 0x38bdf8,
     roughness: 0.1,

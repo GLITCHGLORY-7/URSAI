@@ -30,11 +30,11 @@ function MainLayout() {
       <Header />
 
       {/* Main Workspace View Switcher */}
-      <div className="flex-1 flex flex-col lg:flex-row overflow-hidden relative">
+      <div className="flex-1 flex flex-col lg:flex-row overflow-y-auto lg:overflow-hidden relative custom-scrollbar">
         {activeTab === 'COMMAND_CENTER' && (
           <>
             {/* Central / Main Map Area */}
-            <main className="flex-1 relative flex flex-col p-2 bg-slate-950 min-w-0 min-h-[400px] h-full overflow-hidden">
+            <main className="relative flex flex-col p-0 lg:p-2 bg-slate-950 min-w-0 min-h-[50vh] lg:h-full lg:flex-1 overflow-hidden shrink-0">
               <ErrorBoundary fallbackName="Map View">
                 <MapView />
               </ErrorBoundary>
@@ -48,7 +48,7 @@ function MainLayout() {
         )}
 
         {(activeTab as string) === 'DEPARTMENTS' && (
-          <div className="flex-1 p-6 overflow-y-auto custom-scrollbar bg-slate-950">
+          <div className="flex-1 p-3 sm:p-6 overflow-y-auto custom-scrollbar bg-slate-950">
             <div className="max-w-6xl mx-auto space-y-4">
               <ErrorBoundary fallbackName="Department Operations Panel">
                 <DepartmentOperationsPanel />
@@ -58,7 +58,7 @@ function MainLayout() {
         )}
 
         {activeTab === 'SCENARIO_LAB' && (
-          <div className="flex-1 p-6 overflow-y-auto custom-scrollbar bg-slate-950">
+          <div className="flex-1 p-3 sm:p-6 overflow-y-auto custom-scrollbar bg-slate-950">
             <div className="max-w-5xl mx-auto space-y-4">
               <div className="font-mono text-sm font-bold text-slate-300 uppercase tracking-wider border-b border-slate-800 pb-2">
                 Phase 12 / 19 — Scenario Intelligence & Digital Twin Simulation Lab
@@ -71,7 +71,7 @@ function MainLayout() {
         )}
 
         {activeTab === 'SWARM_LAB' && (
-          <div className="flex-1 p-6 overflow-y-auto custom-scrollbar bg-slate-950">
+          <div className="flex-1 p-3 sm:p-6 overflow-y-auto custom-scrollbar bg-slate-950">
             <div className="max-w-5xl mx-auto space-y-6">
               <ErrorBoundary fallbackName="Swarm Intelligence Card">
                 <SwarmIntelligenceCard />
@@ -84,7 +84,7 @@ function MainLayout() {
         )}
 
         {activeTab === 'STRESS_LAB' && (
-          <div className="flex-1 p-6 overflow-y-auto custom-scrollbar bg-slate-950">
+          <div className="flex-1 p-3 sm:p-6 overflow-y-auto custom-scrollbar bg-slate-950">
             <div className="max-w-5xl mx-auto space-y-4">
               <ErrorBoundary fallbackName="Stress Test Lab">
                 <StressTestLabCard />
@@ -94,7 +94,7 @@ function MainLayout() {
         )}
 
         {activeTab === 'PERFORMANCE' && (
-          <div className="flex-1 p-6 overflow-y-auto custom-scrollbar bg-slate-950">
+          <div className="flex-1 p-3 sm:p-6 overflow-y-auto custom-scrollbar bg-slate-950">
             <div className="max-w-5xl mx-auto space-y-4">
               <div className="font-mono text-sm font-bold text-slate-300 uppercase tracking-wider border-b border-slate-800 pb-2">
                 Phase 13 — Performance Evaluation & AI Benchmarking Suite

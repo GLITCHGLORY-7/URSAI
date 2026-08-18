@@ -1,55 +1,229 @@
 <div align="center">
-  <img src="public/ursai-logo.svg" alt="URSAI Logo" width="120" />
-  <h1>URSAI</h1>
-  <p><strong>Urban Response Swarm AI - Smart City Emergency Command Center</strong></p>
+  <img src="public/ursai-logo.jpg" alt="URSAI Logo" width="400" />
+  
+  *The URSAI identity: A modern, enterprise-ready symbol representing autonomous urban resource swarm intelligence.*
 
-  <p>
-    <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" alt="React" />
-    <img src="https://img.shields.io/badge/Three.js-WebGL-black?style=for-the-badge&logo=three.js" alt="Three.js" />
-    <img src="https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind" />
-    <img src="https://img.shields.io/badge/Vite-5.0-646CFF?style=for-the-badge&logo=vite" alt="Vite" />
-    <img src="https://img.shields.io/badge/NVIDIA_NIM-AI_Agent-76B900?style=for-the-badge&logo=nvidia" alt="NVIDIA NIM" />
-  </p>
+  # URSAI
+
+  **URBAN RESOURCE SWARM AI INTELLIGENCE.**
+
+  Enterprise grade smart city command. No human latency. Just autonomous swarm logic.
+
+  🎬 [Watch URSAI AI in action — Full Tactical Map Demo](https://drive.google.com/drive/folders/18dUl6W1lwACDIuqiNb_m9BF8IZDsyly6)
 </div>
 
 ---
 
-## 🌍 Overview
+## 📊 PROJECT STATISTICS
 
-**URSAI (Urban Response Swarm AI)** is a next-generation smart city emergency command and control platform. It leverages autonomous AI agent swarms and a highly immersive 3D Digital Twin environment to simulate, coordinate, and optimize emergency response logistics across a metropolitan grid.
+*Codebase statistics are calculated from project-owned source files at the time of documentation generation. Dependency directories, build artifacts, caches, generated files, binaries, and README documentation are excluded from the primary source LOC calculation.*
 
-By integrating multi-agent coordination with **NVIDIA NIM LLMs** for strategic decision-making, URSAI demonstrates how future cities can handle critical incidents—from traffic accidents to severe weather emergencies—with zero human latency.
+```text
++-------------------------------------------------------------------------+
+| 📄 SOURCE      | 💻 CODE         | 🧩 MODULES     | 🚀 PERFORMANCE    |
+|----------------|-----------------|----------------|-------------------|
+| 123 FILES      | 18,539 LINES    | 4 MODULES      | 60 FPS WebGL      |
++-------------------------------------------------------------------------+
+```
+
+| Metric | Lines |
+| :--- | :--- |
+| **Total Lines** | 18,539 |
+| **Code Lines** | 15,759 |
+| **Blank Lines** | 2,780 |
+
+**Module Breakdown:**
+
+| Module | Files | Lines of Code | Primary Role |
+| :--- | :--- | :--- | :--- |
+| **Frontend UI** | 35 | 5,600 | React SPA / Command Dashboard |
+| **Map Engine** | 6 | 4,300 | Three.js / WebGL 3D Tactical Map |
+| **AI Swarm Core** | 16 | 1,460 | Multi-Agent Coordination / Logic |
+| **Simulation** | 66 | 7,179 | Data models / City Environment |
 
 ---
 
-## ✨ Core Features
+## 📚 CONTENTS
 
-*   **🧠 AI Decision Engine (NVIDIA NIM)**: Utilizes `Llama-3.3-70b-instruct` to instantly analyze incident reports, assess severity, and autonomously dispatch the optimal mix of emergency services.
+- [Project Statistics](#-project-statistics)
+- [Overview & Philosophy](#-overview--philosophy)
+- [Project Scenario: The Chennai Simulation](#-project-scenario-the-chennai-simulation)
+- [Problem & Solution](#-problem---solution)
+- [Key Features](#-key-features)
+- [COMPLETE VISUAL PRODUCT WALKTHROUGH](#-complete-visual-product-walkthrough)
+- [System Architecture Flow](#-system-architecture-flow)
+- [Module Architecture](#-module-architecture)
+- [Languages & Technology Stack](#-languages--technology-stack)
+- [Configuration & Setup](#-configuration---setup)
+
+---
+
+## 🎯 OVERVIEW & PHILOSOPHY
+
+**URSAI** stands for **Urban Resource Swarm AI Intelligence**. 
+
+It is a next-generation smart city emergency command and control platform that wraps an entire metropolitan grid in an autonomous AI agent swarm and a highly immersive 3D Digital Twin environment.
+
+### The URSAI Philosophy
+The acronym encapsulates the core architecture of the platform:
+- **Urban Resource**: Managing and directing critical city infrastructure, such as ambulances, police interceptors, and dynamic traffic grids.
+- **Swarm AI Intelligence**: Moving away from centralized human dispatchers and instead utilizing decentralized, multi-agent artificial intelligence. Individual AI agents operate independently but collaborate dynamically as a "swarm" to solve complex logistical problems in real-time.
+
+By integrating multi-agent coordination with **NVIDIA NIM LLMs** for strategic decision-making, URSAI demonstrates how future cities can handle critical incidents—from traffic accidents to severe weather emergencies—entirely autonomously with zero human latency.
+
+---
+
+## 🏙️ PROJECT SCENARIO: THE CHENNAI SIMULATION
+
+To prove the efficacy of the swarm, URSAI features a live **Chennai Command Sector** simulation. The project drops the user into a high-stakes, 3D interactive simulation of downtown Chennai, India. 
+
+**The Use Case:**
+A severe, multi-vehicle collision occurs at a major intersection (e.g., Anna Salai / Teynampet DMS Junction Corridor). Human dispatchers would typically take minutes to parse the chaos, contact emergency units, and navigate traffic. URSAI handles it in milliseconds:
+
+1. **Incident Detected**: The Swarm Orchestrator parses the severity of the crash and establishes a V2X (Vehicle-to-Everything) Mesh Network.
+2. **Police Interceptor (PD-28)**: Dispatched ahead of medical teams to secure a 150m crash perimeter and establish civilian diversions.
+3. **Ambulance Agent (AM-15)**: A Type-IV Advanced Life Support unit is routed to the scene, streaming live ECG telemetry. 
+4. **Traffic Controller (TR-07)**: Hijacks the SCATS traffic signal grid. As the ambulance moves, the AI forcibly overrides traffic lights, creating a "Green Wave" corridor that eliminates red-light stops entirely.
+5. **Hospital Agent**: Pre-allocates Trauma Bay #2 at Apollo Hospitals (Greams Road) before the patient even arrives.
+
+---
+
+## ❗ PROBLEM → 💡 SOLUTION
+
+```text
+           PROBLEM
++---------------------------+
+| Human dispatch latency    |
+| Fragmented city systems   |
+| Traffic gridlock delays   |
+| Suboptimal unit routing   |
++---------------------------+
+             |
+             v
+           SOLUTION
++---------------------------+
+| Autonomous Agent Swarms   |
+| V2X Green Wave Corridors  |
+| 3D Digital Command        |
+| Sub-second AI Dispatch    |
++---------------------------+
+```
+
+---
+
+## ✨ KEY FEATURES
+
+*   **🧠 AI Decision Engine (NVIDIA NIM)**: Utilizes `meta/llama-3.3-70b-instruct` to instantly analyze incident reports, assess severity, and autonomously dispatch the optimal mix of emergency services.
 *   **🗺️ 3D Digital Twin Interface**: A fully interactive, high-density WebGL tactical map built on Three.js, featuring real-time tracking of AI agents, live traffic simulation, and dynamic routing.
-*   **🤖 Multi-Agent Swarm Logic**: Independent, cooperative agents for Ambulance, Police, Fire Rescue, and Traffic Control. Agents communicate via a central event bus to synchronize complex operations (e.g., Police establishing "Green Corridors" for Ambulances).
-*   **🛣️ Dynamic Pathfinding**: Calculates optimal routes through the simulated city grid in real-time, responding dynamically to traffic bottlenecks and active incidents.
+*   **🤖 Multi-Agent Swarm Logic**: Independent, cooperative agents for Ambulance, Police, Fire Rescue, and Traffic Control. Agents communicate via a central event bus to synchronize complex operations.
+*   **🚥 V2X Green Wave Corridors**: The Traffic Agent dynamically preempts SCATS traffic signals, creating zero-stop corridors for emergency vehicles.
 *   **📊 Operational Intelligence**: Live telemetry dashboards providing command-center visibility into system health, response times, active dispatches, and hospital availability.
+*   **📱 Responsive Command Dashboard**: A meticulously crafted, responsive UI that allows commanders to monitor the swarm from desktop, tablet, or mobile.
 
 ---
 
-## 🛠️ Technology Stack
+## 📸 COMPLETE VISUAL PRODUCT WALKTHROUGH
 
-*   **Frontend Framework**: React 18 with TypeScript
-*   **3D Rendering**: Three.js (WebGL)
-*   **Styling**: Tailwind CSS & Lucide Icons
-*   **Build Tool**: Vite
-*   **AI Integration**: NVIDIA NIM Cloud APIs (Llama 3.3)
-*   **State Management**: React Context API & Event Bus architecture
+### 1. The 2D Tactical Command View
+<img src="public/docs/2d_map.jpg" alt="2D Tactical Map" width="800" />
+
+*The primary URSAI command interface. It displays the live Chennai sector map, active incident markers, and hospital bed availability telemetry. Dispatchers can oversee the entire grid while the swarm manages logistics.*
+
+### 2. Satellite Telemetry Mode
+<img src="public/docs/satellite_map.png" alt="Satellite Map Mode" width="800" />
+
+*A high-resolution satellite imagery overlay for precision geographic coordination, environmental assessment, and structural context around the incident site.*
+
+### 3. 3D Digital Twin Cityscape
+<img src="public/docs/3d_map.png" alt="3D Digital Twin" width="800" />
+
+*An immersive 60FPS WebGL 3D simulation of the city. This view visualizes the V2X Green Wave corridors, metro infrastructure, and real-time agent movement through the cyberpunk-styled streets.*
+
+### 4. Live Mission Activity Stream
+<img src="public/docs/activity_stream.jpg" alt="Activity Stream" width="400" />
+
+*The operational sidebar detailing the active incident severity, destination hospital, and a live summary of all active agents working simultaneously to resolve the crisis.*
+
+### 5. Autonomous Agent Roles
+<img src="public/docs/agent_roles.png" alt="Agent Roles" width="400" />
+
+*Granular telemetry cards for individual swarm agents (Ambulance AM-15, Police PD-28, Traffic TR-07, and Hospital ER), showcasing their current strategies, ETA, and specialized tasks.*
+
+### 6. Inter-Agent AI Comms Log
+<img src="public/docs/ai_comms.png" alt="AI Comms Log" width="400" />
+
+*The raw V2X communication stream. This log provides full transparency into the LLM orchestrator and how the autonomous agents negotiate priorities and share data without human intervention.*
 
 ---
 
-## 🚀 Getting Started
+## 🏗️ SYSTEM ARCHITECTURE FLOW
+
+URSAI operates on a decentralized swarm architecture. Instead of a single monolithic brain dictating all moves, URSAI utilizes a **Coordinator** that delegates objectives to specialized, autonomous agents.
+
+```mermaid
+graph TD
+    A[Emergency Detected] -->|Raw Text / Telemetry| B(NVIDIA NIM LLM)
+    B -->|Analyzes Severity & Classifies Incident| C{Swarm Coordinator}
+    
+    C -->|Dispatch| D[Ambulance Agent]
+    C -->|Dispatch| E[Police Agent]
+    C -->|Activate| F[Traffic Agent]
+    C -->|Notify| G[Hospital Agent]
+    
+    D -->|Streams Real-time GPS Location| F
+    F -->|V2X Preemption| H((City Traffic Signals))
+    H -->|Creates Green Wave| D
+    
+    E -->|Secures Perimeter & Diversions| I((Crash Site))
+    D -->|Navigates at High Speed to| I
+    D -->|Loads & Transports Patient to| G
+```
+
+1. **Incident Injection**: A simulated multi-vehicle collision is fed to the swarm.
+2. **LLM Evaluation**: NVIDIA NIM processes the text, extracts severity, and determines the required agent payload.
+3. **Swarm Execution**: The Coordinator wakes up the respective agents.
+4. **Agent Collaboration**: The Traffic Agent observes the Ambulance Agent's location in real-time and actively turns traffic lights green ahead of it.
+5. **3D Visualization**: The React frontend subscribes to the Agent Event Bus and updates the Three.js canvas at 60 FPS.
+
+---
+
+## 🧩 MODULE ARCHITECTURE
+
+```text
+src/
+├── agents/            # Autonomous Swarm Agents (Ambulance, Police, Traffic)
+├── components/        # React UI Components
+│   ├── ai/            # Decision Engine Interfaces
+│   ├── map/           # Three.js Tactical 3D Map
+│   └── mission/       # Agent Telemetry Sidebars
+├── coordination/      # Central Event Bus & Mission Coordinator
+├── data/              # City infrastructure datasets & coordinates
+├── services/          # Core business logic & API integrations
+└── types/             # TypeScript interfaces
+```
+
+---
+
+## 💻 LANGUAGES & TECHNOLOGY STACK
+
+URSAI is built for maximum performance, utilizing a modern, strictly-typed web stack to handle intensive rendering and high-frequency telemetry.
+
+*   **TypeScript (85%)**: The core backbone of the URSAI engine. Chosen for its strict type safety, which is absolutely critical when handling concurrent agent states, complex event-bus payloads, and 3D coordinate math without runtime errors.
+*   **React 18**: Powers the reactive data layer and UI rendering. The component tree is heavily optimized to prevent unnecessary re-renders when the high-frequency telemetry streams push updates.
+*   **Three.js (WebGL)**: The engine driving the 3D Digital Twin. It utilizes advanced PBR (Physically Based Rendering) materials, dynamic shadows, and thousands of instanced geometries to render the cityscape at 60 FPS directly in the browser.
+*   **Tailwind CSS**: The utility-first styling framework used to design the cyberpunk, data-dense command center dashboard and ensure it remains responsive across all devices.
+*   **Vite**: The lightning-fast build tool and development server powering the project.
+*   **NVIDIA NIM Cloud APIs**: Provides low-latency access to the `meta/llama-3.3-70b-instruct` model, which acts as the intelligent brain parsing unstructured emergencies into structured swarm actions.
+
+---
+
+## 🚀 CONFIGURATION & SETUP
 
 ### Prerequisites
 *   Node.js (v18 or higher)
 *   NVIDIA NIM API Key (Required for the AI Decision Engine)
 
-### Installation
+### Local Installation
 
 1. **Clone the repository**
    ```bash
@@ -76,31 +250,14 @@ By integrating multi-agent coordination with **NVIDIA NIM LLMs** for strategic d
 
 ---
 
-## 🚢 Deployment (Vercel)
+## 🚢 DEPLOYMENT (Vercel)
 
-URSAI is fully optimized for single-click deployment on Vercel.
+URSAI is fully optimized for zero-config deployment on Vercel.
 
 1. Import your GitHub repository into Vercel.
 2. Vercel will automatically detect the **Vite** configuration.
 3. Add your `NVIDIA_API_KEY` to the Vercel Environment Variables.
 4. Click **Deploy**.
-
----
-
-## 📂 Project Architecture
-
-```text
-src/
-├── agents/            # Autonomous Swarm Agents (Police, Fire, EMS)
-├── components/        # React UI Components
-│   ├── ai/            # Decision Engine Interfaces
-│   ├── map/           # Three.js Tactical 3D Map
-│   └── ...
-├── coordination/      # Central Event Bus & Mission Coordinator
-├── data/              # City infrastructure datasets & coordinates
-├── services/          # Core business logic & API integrations
-└── types/             # TypeScript interfaces
-```
 
 ---
 
