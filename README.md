@@ -1,130 +1,109 @@
-# URSAI — Urban Resource Swarm AI
-### AI-Powered Multi-Agent Smart City Resource Coordination System
+<div align="center">
+  <img src="public/ursai-logo.svg" alt="URSAI Logo" width="120" />
+  <h1>URSAI</h1>
+  <p><strong>Urban Response Swarm AI - Smart City Emergency Command Center</strong></p>
 
-URSAI (Urban Resource Swarm AI) is an advanced smart-city emergency coordination platform operating across the Chennai Metropolitan Region (`13.0827° N, 80.2707° E`). It demonstrates how emergency agents—Ambulance, Police, Traffic Signal Control, and Hospital Intake—collaborate through an authoritative multi-agent coordination engine backed by NVIDIA NIM AI reasoning.
-
----
-
-## 🏛 System Architecture & Workflow
-
-```
-                    URSAI CORE COMMAND CENTER
-                                │
-       ┌────────────────────────┼────────────────────────┐
-       ▼                        ▼                        ▼
-OpenStreetMap Tiles      OSRM Routing          Open-Meteo Weather
-       │                        │                        │
-       └────────────────────────┼────────────────────────┘
-                                ▼
-                      CITY DATA SIMULATOR
-                  (Congestion, Weather, ICU)
-                                │
-                                ▼
-                       AI DECISION ENGINE
-            (NVIDIA NIM Llama 3.3 70B / Rule Fallback)
-                                │
-                                ▼
-                   AUTHORITATIVE COORDINATOR
-            (State Machine & Swarm Orchestrator)
-                                │
-    ┌────────────┬──────────────┴──────────────┬────────────┐
-    ▼            ▼                             ▼            ▼
-Ambulance      Police                    Traffic Agent   Hospital Agent
-(AMB-01)      (POL-01)                  (Green Corridor)  (Intake/ICU)
-    │            │                             │            │
-    └────────────┴──────────────┬──────────────┴────────────┘
-                                ▼
-                      ADAPTIVE MISSION MONITOR
-                     (Condition & Replan Engine)
-                                │
-                                ▼
-                      PERFORMANCE & EVALUATION
-```
+  <p>
+    <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" alt="React" />
+    <img src="https://img.shields.io/badge/Three.js-WebGL-black?style=for-the-badge&logo=three.js" alt="Three.js" />
+    <img src="https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css" alt="Tailwind" />
+    <img src="https://img.shields.io/badge/Vite-5.0-646CFF?style=for-the-badge&logo=vite" alt="Vite" />
+    <img src="https://img.shields.io/badge/NVIDIA_NIM-AI_Agent-76B900?style=for-the-badge&logo=nvidia" alt="NVIDIA NIM" />
+  </p>
+</div>
 
 ---
 
-## ⚡ Key Features Across All 15 Phases
+## 🌍 Overview
 
-- **Unified Multi-Department Swarm (Phase 20):** Expands URSAI across 12 city departments (EMS, Police, Fire & Rescue, Traffic, Hospital, Disaster Management, Public Works, Electricity/Power Utility, Water & Sewerage, Weather/Environment, Emergency Comms, and City Administration). Only contextually required departments are activated per incident.
-- **Command Center Layout & Presentation Mode (Phase 14):** Dominant Leaflet map canvas, tabbed navigation (**Command Center**, **Departments**, **Scenario Lab**, **Swarm & Learning**, **Stress Lab**, **Performance**, **About**), and a clean **Presentation Mode** for executive demonstrations.
-- **One-Interaction Demo Engine (Phase 14):** Single-click **`START DEMO`** sequence with reliable **Pause**, **Resume**, **Reset**, and **3x Speed** controls.
-- **NVIDIA NIM AI Decision Engine (Phase 5):** Leverages `meta/llama-3.3-70b-instruct` via backend Express proxy routes (`/api/nim-prediction`) with robust rule-based fallback.
-- **Autonomous Multi-Agent Swarm (Phases 1-4, 8):**
-  - **Ambulance Agent (AMB-01):** Turn-by-turn OSRM routing, live position interpolation, dual-leg mission execution.
-  - **Police Agent (POL-01):** Perimeter security and crowd control dispatch.
-  - **Traffic Agent:** Dynamic Green Corridor signal clearing along emergency routes.
-  - **Hospital Agent:** Multi-factor emergency intake scoring across 5 major Chennai medical centers.
-- **Digital Twin & What-If Analysis (Phase 12):** Counterfactual scenario modeling for extreme traffic congestion, heavy rainfall, and ICU capacity stress.
-- **Performance Evaluation & AI Benchmarking (Phase 13):** Empirical baseline vs. swarm preemption benchmark calculations with JSON/CSV exporter.
-- **System Resilience & Health Layer (Phase 9):** Subsystem invariant monitoring, error boundaries, structured event logging, and instant reset capabilities.
+**URSAI (Urban Response Swarm AI)** is a next-generation smart city emergency command and control platform. It leverages autonomous AI agent swarms and a highly immersive 3D Digital Twin environment to simulate, coordinate, and optimize emergency response logistics across a metropolitan grid.
+
+By integrating multi-agent coordination with **NVIDIA NIM LLMs** for strategic decision-making, URSAI demonstrates how future cities can handle critical incidents—from traffic accidents to severe weather emergencies—with zero human latency.
 
 ---
 
-## 🎬 Quick Demo Steps (Phase 14)
+## ✨ Core Features
 
-1. Click **`START DEMO`** in the bottom Action Bar.
-2. Observe the automated emergency dispatch on Anna Salai flyover.
-3. Watch the synchronized response across Ambulance, Police, Green Corridor Traffic, and Hospital Intake.
-4. Click **`PAUSE DEMO`** to inspect situation telemetry, then **`RESUME DEMO`**.
-5. Toggle **`DEMO SIMULATION SPEED (3x)`** for accelerated completion.
-6. Observe the final **`MISSION COMPLETED`** card detailing measured response metrics.
-7. Click **`RESET SIMULATION`** to return to idle state instantly.
+*   **🧠 AI Decision Engine (NVIDIA NIM)**: Utilizes `Llama-3.3-70b-instruct` to instantly analyze incident reports, assess severity, and autonomously dispatch the optimal mix of emergency services.
+*   **🗺️ 3D Digital Twin Interface**: A fully interactive, high-density WebGL tactical map built on Three.js, featuring real-time tracking of AI agents, live traffic simulation, and dynamic routing.
+*   **🤖 Multi-Agent Swarm Logic**: Independent, cooperative agents for Ambulance, Police, Fire Rescue, and Traffic Control. Agents communicate via a central event bus to synchronize complex operations (e.g., Police establishing "Green Corridors" for Ambulances).
+*   **🛣️ Dynamic Pathfinding**: Calculates optimal routes through the simulated city grid in real-time, responding dynamically to traffic bottlenecks and active incidents.
+*   **📊 Operational Intelligence**: Live telemetry dashboards providing command-center visibility into system health, response times, active dispatches, and hospital availability.
 
 ---
 
-## 📚 Project Documentation (`/docs`)
+## 🛠️ Technology Stack
 
-- [`docs/demo-script.md`](./docs/demo-script.md) — Step-by-step presentation script.
-- [`docs/architecture.md`](./docs/architecture.md) — Comprehensive technical architecture & data flow.
-- [`docs/project-summary.md`](./docs/project-summary.md) — Executive summary & capabilities overview.
-- [`docs/test-report.md`](./docs/test-report.md) — QA verification matrix and test results.
-- [`docs/release-checklist.md`](./docs/release-checklist.md) — Production release checklist.
-
----
-
-## 🔒 Environment Configuration
-
-Copy `.env.example` to `.env`:
-
-```env
-NVIDIA_API_KEY=your_nvidia_nim_api_key_here
-NVIDIA_NIM_MODEL=meta/llama-3.3-70b-instruct
-```
-
-> **Note:** If `NVIDIA_API_KEY` is not provided or the NIM API is unreachable, URSAI automatically engages its deterministic rule-based fallback engines, ensuring 100% functional continuity.
+*   **Frontend Framework**: React 18 with TypeScript
+*   **3D Rendering**: Three.js (WebGL)
+*   **Styling**: Tailwind CSS & Lucide Icons
+*   **Build Tool**: Vite
+*   **AI Integration**: NVIDIA NIM Cloud APIs (Llama 3.3)
+*   **State Management**: React Context API & Event Bus architecture
 
 ---
 
-## 🚀 Running Locally
+## 🚀 Getting Started
 
-```bash
-# 1. Install dependencies
-npm install
+### Prerequisites
+*   Node.js (v18 or higher)
+*   NVIDIA NIM API Key (Required for the AI Decision Engine)
 
-# 2. Start dev server (Port 3000)
-npm run dev
+### Installation
 
-# 3. Build for production
-npm run build
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/GLITCHGLORY-7/URSAI.git
+   cd URSAI
+   ```
 
-# 4. Start production build
-npm run start
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables**
+   Create a `.env` file in the root directory:
+   ```env
+   NVIDIA_API_KEY=your_nvidia_api_key_here
+   ```
+
+4. **Start the Development Server**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`.
+
+---
+
+## 🚢 Deployment (Vercel)
+
+URSAI is fully optimized for single-click deployment on Vercel.
+
+1. Import your GitHub repository into Vercel.
+2. Vercel will automatically detect the **Vite** configuration.
+3. Add your `NVIDIA_API_KEY` to the Vercel Environment Variables.
+4. Click **Deploy**.
+
+---
+
+## 📂 Project Architecture
+
+```text
+src/
+├── agents/            # Autonomous Swarm Agents (Police, Fire, EMS)
+├── components/        # React UI Components
+│   ├── ai/            # Decision Engine Interfaces
+│   ├── map/           # Three.js Tactical 3D Map
+│   └── ...
+├── coordination/      # Central Event Bus & Mission Coordinator
+├── data/              # City infrastructure datasets & coordinates
+├── services/          # Core business logic & API integrations
+└── types/             # TypeScript interfaces
 ```
 
 ---
 
-## 📊 Data Honesty & Operational Disclaimer
-
-- **REAL / EXTERNAL SERVICES:**
-  - OpenStreetMap & CartoDB Dark Matter (Map tiles & spatial imagery)
-  - OSRM (Road network route calculations)
-  - Open-Meteo API (Live meteorological weather feed)
-  - NVIDIA NIM API (LLM multi-agent reasoning when configured)
-
-- **SIMULATED DATA MODELS:**
-  - Emergency Incidents & Accidents
-  - Swarm unit positions & movement interpolation
-  - Hospital bed & ICU capacity registry
-  - City traffic congestion indices
-
-> 🚨 **OPERATIONAL DISCLAIMER:** URSAI is a working simulation prototype for research and demonstration purposes. It is not a certified emergency-response system and must not be used for real-world emergency dispatch or operational control.
+<div align="center">
+  <p>Engineered for the future of urban resilience.</p>
+</div>
